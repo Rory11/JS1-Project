@@ -286,7 +286,7 @@ function closeModal() {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 }
-//To chance currency image
+//To change currency image
 function convertCurrency() {
   currencyConversion = document.getElementById("currencySelector").value;
   flagImage = document.getElementsByClassName("currencyFlag");
@@ -448,6 +448,7 @@ function displayCategory() {
 function displayDate() {
   //Display Date and Time
   var showDate = document.getElementById("dateArea");
+  
   showDate.innerHTML = new Date();
 }
 //To display random game in hero section
