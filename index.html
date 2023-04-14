@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<script defer src="./script.js"></script>
+</head>
+<body onload="displayOnLoad()">
+	<header>
+		<nav class="navbar">
+			<h2>Order Games Online</h2>
+			<ul>
+				<li style="float: right;">
+					Currency: 
+					<img class="currencyFlag" id="currencyFlag" src="./Images/canadian.png" width="20px">
+					<select id="currencySelector" onchange="convertCurrency()">
+						<option value="CAD">CAD</option>
+						<option value="USD">USD</option>
+						<option value="GBP">GBP</option>
+					</select>
+				</li>
+				<li id="dateArea">Date/Time</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		
+		<section class="hero-section" id="hero-section"></section>
+
+		<section class="store-sort">
+			<h4>Browse store by Category</h4>
+			<select id="displayFilter" onchange="displayOnLoad()">
+				<option>All</option>
+				<option>Action</option>
+				<option>Survival</option>
+				<option>Shooter</option>
+				<option>Builder</option>
+				<option>RPG</option>
+			</select>
+		</section>
+
+		<section class="game-list" id="game-list">
+
+		</section>
+
+		<fieldset>
+			<label for="user-cart">View Your Cart</label>
+		</fieldset>
+		<section class="modal hidden"></section>
+		<div class="overlay hidden"></div>
+		<section class="user-cart" id="user-cart"></section>
+		
+
+		<section class="cart-total" id="cart-total">
+			<h2>Check Out</h2>
+		</section>
+
+		
+	</main>
+</body>
+</html>
